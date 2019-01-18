@@ -1,0 +1,9 @@
+<ul class="module">
+  <li *ngFor="let module of moduleVO"  >
+    <span>{{module.moduleName}}&nbsp;&nbsp;&nbsp;{{module.moduleTypeName}}</span>&nbsp;&nbsp;&nbsp;{{module.moudelMemo}}
+    <span class="img-icon" *ngIf="module.songOrOther==0"></span><span class="song-icon" *ngIf="module.songOrOther==1"></span>
+    <div *ngIf="module.moduleType==1" (click)="openModalWithComponent(module.id)" style="display:inline-block"> <button class="add"></button></div>
+
+  </li>
+</ul>
+

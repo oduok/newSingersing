@@ -1,0 +1,48 @@
+<div class="course-bg">
+  <div class="web-content">
+    <div class="box-t">
+        <div class="box-c">
+            <ul class="courses">
+                <li *ngFor="let phase of phases"   >
+              
+                  <span>   {{phase.phaseName}} </span>
+                  <div>
+                    <ul>
+              
+                      <li *ngFor="let term of phase.courseInfoList">
+                            <span>{{term.termName}}</span>
+                        <button (click)="createNewCourse(phase,term)" class="add">创建新课堂</button>
+              
+              
+                        <div *ngIf="courses">
+                          <ul class="coursess">
+                            <li *ngFor="let course of term.courseVO"  >
+                              {{course.courseName}}
+                              <p>
+                                <button (click)="playCourse(course.courseId)">播放课堂</button>
+                              </p>
+                            </li>
+                          </ul>
+              
+                        </div>
+              
+              
+                      </li>
+              
+                    </ul>
+              
+                  </div>
+                </li>
+              </ul>
+        </div>
+        
+      <div class="box-b">
+      </div>
+    </div>
+
+      
+  </div>
+</div>
+
+
+

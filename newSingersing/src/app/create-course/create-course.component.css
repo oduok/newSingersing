@@ -1,0 +1,70 @@
+/* HeroDetailComponent's private CSS styles */
+.course-bg{
+  background: url('../../assets/img/lg.jpg') no-repeat center top;
+  height: 100vh;
+}
+.web-content{
+  padding: 114px 0 0;
+  text-align: center;
+}
+ .create-box{ width: 788px; height: 764px; margin: 0 auto;background: url('../../assets/img/create.png') no-repeat left top;}
+.box{padding: 150px 82px 0;}
+.text-input{ width: 100%; height: 34px;line-height:34px; border-radius: 6px; background: #d1b38e; color: #fff; text-indent: 1em; font-size:16px; color: #644a2a; border: none; box-shadow: 1px 3px 3px #c9ad8a inset;}
+.text-input:focus{outline: none;}
+
+.text-box{ width: 100%;line-height:34px; min-height:34px; border-radius: 6px; background: #d1b38e; color: #fff; text-indent: 1em; font-size:16px; color: #644a2a; border: none; box-shadow: 1px 3px 3px #c9ad8a inset;}
+
+.mt15{ margin-top:15px;}
+
+button {
+  margin-top: 20px;
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+}
+button:hover {
+  opacity: .8;
+}
+button:disabled {
+  opacity: .9;
+}
+nav{
+  text-align: left;
+}
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 15px;
+  display: inline-block;
+  background-color: #fbba48;
+  border-radius: 4px;
+  color: #834f26;
+}
+nav a:first-of-type{
+  border-top-right-radius:0;
+  border-bottom-right-radius:0;
+}
+nav a:last-of-type{
+  border-top-left-radius:0;
+  border-bottom-left-radius:0;
+}
+nav a:visited, a:link {
+  color: #834f26;
+}
+nav a:hover {
+  color: #fff;
+  background-color: #013971;
+}
+nav a.active {
+  color: #fff;
+  background-color: #013971;
+}
+
+.btn-cancel,.btn-q{ width: 180px; height: 38px;}
+.btn-cancel{background: url(../../assets/img/canel.png) no-repeat center top;}
+
+.btn-q{background: url(../../assets/img/q.png) no-repeat center top;}

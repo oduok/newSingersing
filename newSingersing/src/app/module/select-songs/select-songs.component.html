@@ -1,0 +1,75 @@
+<div class="modal">
+
+  
+
+<div>
+    {{selectableSongsHouse.songsHouseName}}
+     
+  </div>
+  
+  <div id="search-component">
+  
+    <input #searchBox id="search-box" (input)="search(searchBox.value)" />
+  
+    <ul class="search-result">
+      <li *ngFor="let songHouse of songHouses$ | async" >
+  
+        <ul>
+          <li *ngFor="let fileName of songHouse.fileNameList">
+            {{fileName}}
+          </li>
+        </ul>
+  
+      </li>
+    </ul>
+  </div>
+  
+  
+  
+  
+  <div *ngIf="selectableSongsHouse">
+    <ul >
+      <li *ngFor="let fileNameList of selectableSongsHouse.fileNameList"  >
+        <ul>
+          <li *ngFor="let fileName of fileNameList.fileNameList" >
+            {{fileName}}
+          </li>
+        </ul>&nbsp;
+      </li>
+    </ul>
+  </div>
+  
+  
+  <div>
+    <label>已选歌曲列表</label>
+    <ul >
+      <li *ngFor="let courseFile of optionPlayInfo.courseFileVOList"  >
+  
+  
+        <button class="delete" title="删除已选歌曲"
+                (click)="delete(courseFile)">x</button>
+  
+            {{courseFile.fileName}}
+         &nbsp;
+      </li>
+    </ul>
+  </div>
+  <div>
+  <label>固定音乐</label>
+    <ul >
+      <li *ngFor="let regular of regularList"  >
+        <ul>
+          <li *ngFor="let regularFile of regular.courseFileVOList">
+            {{regularFile.fileName}}
+          </li>
+        </ul>
+        &nbsp;
+      </li>
+    </ul>
+  </div>
+  <div>
+      <button name="Close" class="btn btn-primary" (click)="btnCloseClick()">返回</button>
+      <button name="Confirm" class="btn btn-primary" (click)="btnConfirmClick()">加入{{optionPlayInfo.moduleName}}模块</button>
+  </div>
+  
+</div>

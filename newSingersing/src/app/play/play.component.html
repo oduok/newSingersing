@@ -1,0 +1,19 @@
+<ul class="playModule">
+  <li *ngFor="let playInfo of palyInfoList"   >
+    <span>
+      {{playInfo.moduleName}}
+    </span>
+
+    <div *ngIf="playInfo.courseFileVOList">
+      <ul class="playFile">
+        <li *ngFor="let courseFile of playInfo.courseFileVOList"  >
+          {{courseFile.fileName}}
+        </li>
+      </ul>
+
+    </div>
+  </li>
+</ul>
+
+<button (click)="goback()">更换模块</button>
+<button (click)="goHomework()">布置作业</button>

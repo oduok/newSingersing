@@ -1,0 +1,40 @@
+<div class="course-bg">
+  <div class="web-content">
+    <div class="create-box">
+
+        <div class="box">
+      
+          <input [(ngModel)]="courseName" placeholder="请输入课堂名称" class="text-input">
+      
+
+          <nav>
+          
+          
+            <a [routerLink]="['/create-course/dynamic']" [queryParams]="{levelId:level_id, phaseId: phaseId, termId: termId}" routerLinkActive="active"  [routerLinkActiveOptions]="{ exact: true }">
+              固定课堂模板
+            </a>
+          
+          
+            <a [routerLink]="['/create-course/regular']" [queryParams]="{levelId:level_id, phaseId: phaseId, termId: termId}" routerLinkActive="active"  [routerLinkActiveOptions]="{ exact: true }">
+              已有课堂模板
+            </a>
+          
+          </nav>
+         <div class="text-box">
+
+            <router-outlet></router-outlet>
+         </div>
+      
+          <div class="text-box mt15">
+            <app-module [phaseInfo]="{levelId:level_id, phaseId: phaseId, termId: termId, courseName: '', courseId: 0, playInfoList: []}"></app-module>
+          </div>
+          
+          <button (click)="save()" class="btn-q"></button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button (click)="goBack()" class="btn-cancel"></button>
+      
+      
+      </div>
+    </div>
+  </div>
+</div>
+

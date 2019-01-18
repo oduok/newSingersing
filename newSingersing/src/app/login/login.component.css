@@ -1,0 +1,59 @@
+/* HeroDetailComponent's private CSS styles */
+.lg-bg{
+  background: url('../../assets/img/lg.jpg') no-repeat center top;
+  height: 100vh;
+}
+.lg-box{
+  padding-top: 234px;
+  text-align: center;
+}
+.log{
+  width: 454px;
+  height: 440px;
+  margin: 0 auto;
+  padding: 122px 0 0;
+  background: url('../../assets/img/login.png') no-repeat center top;
+
+}
+.n-label {
+  display: inline-block;
+  width:240px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  background: none;
+  border: none;
+}
+.mr{
+  margin-top:18px; 
+}
+input {
+  height: 36px;
+  line-height: 36px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+}
+input:focus{
+  outline: none;
+}
+.btn-lg{
+  width: 288px;
+  height: 46px;
+  margin: 32px auto 0;
+  cursor: pointer;
+  cursor: hand;
+  background: none;
+  border: none;
+}
+
+button:hover,button:focus {
+  background: none;
+  border: none;
+  outline: none;
+  opacity: .9;
+}
+button:disabled {
+  
+}

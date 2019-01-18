@@ -1,0 +1,97 @@
+/* HeroesComponent's private CSS styles */
+
+.index-bg{
+  background: url('../../assets/img/i.jpg') no-repeat center top;
+  height: 100vh;
+  position: relative;
+}
+.selected {
+  width: 230px;
+  height: 230px;
+  background:url('../../assets/img/on.png') no-repeat center top;
+  color: white;
+}
+.levels {
+  list-style-type: none;
+  padding: 0;
+  position: relative;
+}
+.levels li ,.levels li a{
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  width: 230px;
+  height: 230px;
+}
+.levels li.selected:hover {
+  width: 230px;
+  height: 230px;
+  background:url('../../assets/img/on.png') no-repeat center top;
+  opacity: .7;
+}
+.levels li a:hover {
+  width: 230px;
+  height: 230px;
+  background:url('../../assets/img/on.png') no-repeat center top;
+}
+.li0{ left: 186px; top:436px;}
+.li1{ left: 354px; top:674px;}
+.li2{ left: 790px; top:620px;}
+.li3{ right: 556px; top:508px;}
+.li4{ right: 82px; top:615px;}
+.li5{ right: 390px; top:196px;}
+.li6{ left: 688px; top:40px;}
+.li7{ left: 828px; top:260px;}
+
+.p0{ left: 186px; bottom:540px;}
+.p1{ left: 354px; bottom:304px;}
+.p2{ left: 790px; bottom:360px;}
+.p3{ right: 556px; bottom:470px;}
+.p4{ right: 82px; bottom:370px;}
+.p5{ right: 390px; top:436px;}
+.p6{ left: 688px; top:280px;}
+.p7{ left: 828px; top:500px;}
+
+
+
+
+.levels li a {
+  position: relative;
+  text-indent: -99999em;
+  overflow: hidden;
+}
+.pop{position: absolute;}
+.p-tips{
+  width: 140px;
+  padding:12px 20px;
+  background: #7e4e32;
+  border-radius: 12px;
+  opacity: .8;
+  position: relative;
+  box-shadow: 8px 12px 12px #67391e inset;
+}
+.p-tips::after{
+  content:"";    
+  width: 0;    
+  height: 0;    
+  position: absolute;    
+  bottom: -16px;    
+  left: 50%;    
+  border-width:8px;   
+  border-style: solid;  
+  border-color: #67391e transparent transparent transparent;    
+  font-size: 0; 
+  opacity: .8;
+  z-index: 9;
+}
+.p6 .p-tips::after,.p7 .p-tips::after,.p5 .p-tips::after{
+  bottom: auto;
+  top: -15px;   
+  border-color: transparent transparent #7e4e32 transparent;   
+}
+.p-tips li{
+  list-style-type: none;
+  color: #fff;
+  font-size: 14px;
+  line-height: 28px;
+}

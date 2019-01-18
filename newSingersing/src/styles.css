@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+*{margin: 0;padding:0;}
+body{
+    font-family:"\5FAE\8F6F\96C5\9ED1";
+    height: 100vh;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+}

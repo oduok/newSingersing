@@ -1,0 +1,22 @@
+
+<div class="index-bg">
+  <ul class="levels">
+    <li *ngFor="let level of levels; let i = index" class="li{{i}}"  [class.selected]="level === selectedLevel" (mouseover)="onSelect(level,i)" >
+      <a routerLink="/course/{{level.id}}" > {{level.name}}</a>
+  
+      
+    </li>
+  </ul>
+  <div *ngIf="selectCourse"class="pop p{{ii}}">
+    <ul  class="p-tips">
+      <li *ngFor="let courseName of selectCourse.courseName"  >
+       {{courseName}}
+      </li>
+    </ul>
+  
+  </div>
+</div>
+
+
+
+

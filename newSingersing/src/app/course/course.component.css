@@ -1,0 +1,130 @@
+/* HeroesComponent's private CSS styles */
+.course-bg{
+  background: url('../../assets/img/lg.jpg') no-repeat center top;
+  height: 100vh;
+}
+.web-content{
+  padding: 114px 0 0;
+  text-align: center;
+}
+.box-t{
+  margin: 0 auto;
+  padding: 170px 0 0;
+  width: 800px;
+  background: url('../../assets/img/b1.png') no-repeat center top;
+}
+.box-c{
+  background: url('../../assets/img/b2.png') repeat-y center top;
+}
+.box-b{
+  padding-bottom:100px;
+  background: url('../../assets/img/b3.png') repeat-y center top;
+}
+.add{ padding-left: 30px; line-height: 24px; color:#a08564;background: none; border: none;  background: url('../../assets/img/add.png') no-repeat left top;}
+
+
+.selected {
+  background-color: #CFD8DC !important;
+  color: white;
+}
+.courses {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+.courses li {
+  display: inline-block;
+  width: 150px;
+  list-style-type: none;
+  cursor: pointer;
+  position: relative;
+  background-color: #d1b38e;
+  padding:6px 0;
+  margin: 0 4px;
+  border-radius: 4px;
+}
+.courses li li{ width: 130px;}
+.courses li li:hover {
+  background-color: #c7a377 !important;
+  color: white;
+}
+/* .courses li:hover {
+  color: #607D8B;
+  background-color: #DDD;
+  left: .1em;
+} */
+.courses .text {
+  position: relative;
+  top: -3px;
+}
+.courses .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 0.7em 0 0.7em;
+  background-color: #607D8B;
+  line-height: 1em;
+  position: relative;
+  left: -1px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+
+.courses a {
+  color: #888;
+  text-decoration: none;
+  position: relative;
+  display: block;
+  width: 250px;
+}
+
+.courses a:hover {
+  color:#607D8B;
+}
+
+
+.coursess {
+  margin: 0 30em 2em 0;
+  list-style-type: none;
+  padding: 0;
+  width: 15em;
+}
+.coursess li {
+  cursor: pointer;
+  position: relative;
+  left: 30em;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+.coursess li.selected:hover {
+  background-color: #BBD8DC !important;
+  color: white;
+}
+
+.coursess .text {
+  position: relative;
+  top: -3px;
+}
+.coursess .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.8em 10em 0 0.7em;
+  background-color: #607D8B;
+  line-height: 1em;
+  position: relative;
+  left: 30px;
+  top: -4px;
+  height: 1.8em;
+  margin-right: .8em;
+  border-radius: 4px 0 0 4px;
+}
+
+
+
+
